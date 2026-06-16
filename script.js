@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
     handleScroll();
 
     // ==========================================
-    // 3. Contact Form Submission (Mock API)
+    // 3. Contact Form Submission (Mailto Redirection)
     // ==========================================
     if (leadForm) {
         leadForm.addEventListener('submit', (e) => {
@@ -87,34 +87,41 @@ document.addEventListener('DOMContentLoaded', () => {
             const name = document.getElementById('form-name').value;
             const phone = document.getElementById('form-phone').value;
             const email = document.getElementById('form-email').value;
-            const service = document.getElementById('form-service').value;
+            const serviceSelect = document.getElementById('form-service');
+            const serviceText = serviceSelect.options[serviceSelect.selectedIndex].text;
             const message = document.getElementById('form-message').value;
-            const submitBtn = document.getElementById('form-submit-btn');
 
-            // Button loading state
-            const originalBtnText = submitBtn.textContent;
-            submitBtn.textContent = 'Enviando...';
-            submitBtn.disabled = true;
+            // Construct email details
+            const recipient = 'edilson@tecnofriosul.com';
+            const subject = `Solicitação de Orçamento - ${name}`;
             
-            // Simulate server request (1.5 seconds)
+            const body = `Olá Edilson,\n\n` +
+                         `Gostaria de solicitar um orçamento com os seguintes dados:\n\n` +
+                         `- Nome: ${name}\n` +
+                         `- Telefone/WhatsApp: ${phone}\n` +
+                         `- E-mail: ${email}\n` +
+                         `- Serviço: ${serviceText}\n\n` +
+                         `Mensagem adicional:\n${message || 'Sem mensagem adicional.'}\n\n` +
+                         `Vim através do site da Tecnofrio Sul.`;
+
+            // Create mailto url and redirect
+            const mailtoUrl = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            
+            // Redirect to open email client
+            window.location.href = mailtoUrl;
+
+            // Provide feedback to the user on the screen
+            formStatus.className = 'form-status success';
+            formStatus.innerHTML = `<i class="fa-solid fa-circle-check"></i> Seu cliente de e-mail foi aberto! Envie a mensagem gerada para ${recipient}.`;
+            
+            // Reset form fields
+            leadForm.reset();
+            
+            // Clear message after 8 seconds
             setTimeout(() => {
-                // Success message response
-                formStatus.className = 'form-status success';
-                formStatus.innerHTML = `<i class="fa-solid fa-circle-check"></i> Obrigado, ${name}! Recebemos seu contato. Em breve entraremos em contato via WhatsApp no número ${phone}.`;
-                
-                // Reset form fields
-                leadForm.reset();
-                
-                // Reset button status
-                submitBtn.textContent = originalBtnText;
-                submitBtn.disabled = false;
-                
-                // Clear message after 10 seconds
-                setTimeout(() => {
-                    formStatus.innerHTML = '';
-                    formStatus.className = 'form-status';
-                }, 10000);
-            }, 1500);
+                formStatus.innerHTML = '';
+                formStatus.className = 'form-status';
+            }, 8000);
         });
     }
 

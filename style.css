@@ -815,6 +815,7 @@ img {
 .contact-info-list p {
     color: rgba(241, 245, 249, 0.85);
     font-size: 0.95rem;
+    word-break: break-word;
 }
 
 .contact-info-list p a:hover {
@@ -878,6 +879,7 @@ img {
 .form-group input,
 .form-group select,
 .form-group textarea {
+    width: 100%;
     font-family: var(--font-body);
     font-size: 0.95rem;
     padding: 12px 16px;
@@ -1239,6 +1241,11 @@ img {
 }
 
 @media (max-width: 576px) {
+    .contact-info,
+    .contact-form-container {
+        padding: 30px 16px;
+    }
+    
     .hero-actions {
         flex-direction: column;
         width: 100%;

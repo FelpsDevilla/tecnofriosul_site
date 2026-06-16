@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnofrio Sul | Climatização e Ar Condicionado de Alto Padrão</title>
+    <meta name="description" content="Soluções completas em instalação, manutenção e projetos de ar condicionado residencial e comercial. Conforto térmico e eficiência para o seu ambiente.">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- Google Fonts: Inter & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header/Navbar -->
+    <header class="header" id="main-header">
+        <div class="container header-container">
+            <a href="#" class="logo" id="logo-link">
+                <img src="images/logo.png" alt="Tecnofrio Sul Logo" class="logo-img">
+            </a>
+            
+            <nav class="nav" id="main-nav">
+                <ul class="nav-list">
+                    <li><a href="#inicio" class="nav-link active">Início</a></li>
+                    <li><a href="#servicos" class="nav-link">Serviços</a></li>
+                    <li><a href="#diferenciais" class="nav-link">Diferenciais</a></li>
+                    <li><a href="#sobre" class="nav-link">Quem Somos</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-cta">
+                <button class="mobile-menu-toggle" id="menu-toggle" aria-label="Abrir Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section">
+        <div class="hero-bg-overlay"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="tagline" id="hero-tagline"><i class="fa-solid fa-building"></i> Climatização Corporativa & Industrial</span>
+                <h1 id="hero-title">Sistemas de Climatização para Empresas e Data Centers</h1>
+                <p class="hero-subtitle" id="hero-subtitle">Instalação de alta capacidade, higienização técnica profunda e manutenção corretiva com contratos PMOC para garantir a operação contínua e a qualidade do ar do seu negócio.</p>
+                <div class="hero-actions">
+                    <a href="#contato" class="btn btn-primary btn-large" id="hero-cta-contact">Fale Conosco</a>
+                    <a href="#servicos" class="btn btn-secondary btn-large" id="hero-cta-services">Nossos Serviços</a>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <div class="hero-image-wrapper">
+                    <!-- Premium image placeholder or generated image will be placed here -->
+                    <img src="images/hero_ac.jpg" alt="Ar Condicionado Moderno e Elegante" class="hero-image" id="hero-main-img">
+                    <div class="floating-badge badge-1">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <div>
+                            <h4>Garantia Total</h4>
+                            <p>Serviços Certificados</p>
+                        </div>
+                    </div>
+                    <div class="floating-badge badge-2">
+                        <i class="fa-solid fa-temperature-arrow-down"></i>
+                        <div>
+                            <h4>Ar Limpo</h4>
+                            <p>Saúde & Bem-estar</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicos" class="services-section section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Soluções B2B</span>
+                <h2 class="section-title">Serviços Especializados de Climatização</h2>
+                <p class="section-description">Atendemos data centers, escritórios, indústrias e comércios com engenharia térmica de precisão e equipe técnica altamente qualificada.</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Service Card 1 -->
+                <div class="service-card" id="service-card-datacenters">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-server"></i>
+                    </div>
+                    <h3>Salas de Servidores & Data Centers</h3>
+                    <p>Dimensionamento, controle rigoroso de umidade, filtragem de partículas e temperatura de precisão. Manutenção 24/7 para evitar downtime de sistemas críticos.</p>
+                    <a href="#contato" class="service-link">Saber mais <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="service-card" id="service-card-industrial-clean">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-spray-can-sparkles"></i>
+                    </div>
+                    <h3>Higienização Técnica & Comercial</h3>
+                    <p>Descontaminação biológica profunda e limpeza química biodegradável de evaporadoras, condensadoras e redes de dutos. Essencial para a saúde e o ar puro na sua empresa.</p>
+                    <a href="#contato" class="service-link">Saber mais <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="service-card" id="service-card-pmoc">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-file-shield"></i>
+                    </div>
+                    <h3>Contratos de PMOC (ANVISA)</h3>
+                    <p>Elaboração e execução completa do Plano de Manutenção, Operação e Controle. Garantimos conformidade total com a Lei 13.589/18 e laudos técnicos assinados (ART/TRT).</p>
+                    <a href="#contato" class="service-link">Saber mais <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="service-card" id="service-card-large-install">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-building-shield"></i>
+                    </div>
+                    <h3>Instalação & Projetos Centrais</h3>
+                    <p>Projeto executivo e instalação de sistemas centrais VRF, Chillers, cassetes e chillers de água gelada para edifícios corporativos e plantas industriais.</p>
+                    <a href="#contato" class="service-link">Saber mais <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us / Diferenciais -->
+    <section id="diferenciais" class="features-section section-padding">
+        <div class="container">
+            <div class="features-wrapper">
+                <div class="features-content">
+                    <span class="section-subtitle">Nossos Diferenciais</span>
+                    <h2 class="section-title">Por que escolher a Tecnofrio Sul?</h2>
+                    <p class="section-description">Compromisso com a qualidade e a satisfação do cliente em cada detalhe, desde o primeiro contato até a pós-entrega.</p>
+                    
+                    <ul class="features-list">
+                        <li class="feature-item" id="feature-item-1">
+                            <span class="feature-icon"><i class="fa-solid fa-circle-check"></i></span>
+                            <div>
+                                <h4>Técnicos Credenciados</h4>
+                                <p>Profissionais qualificados pelas principais marcas do mercado de climatização.</p>
+                            </div>
+                        </li>
+                        <li class="feature-item" id="feature-item-2">
+                            <span class="feature-icon"><i class="fa-solid fa-clock"></i></span>
+                            <div>
+                                <h4>Atendimento Rápido</h4>
+                                <p>Pontualidade no agendamento e agilidade na execução dos serviços.</p>
+                            </div>
+                        </li>
+                        <li class="feature-item" id="feature-item-3">
+                            <span class="feature-icon"><i class="fa-solid fa-percent"></i></span>
+                            <div>
+                                <h4>Orçamento Justo</h4>
+                                <p>Preços competitivos, transparência total e facilidade no pagamento.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="features-stats-container">
+                    <div class="stats-grid">
+                        <div class="stat-card" id="stat-card-experience">
+                            <h3 class="stat-number">10+</h3>
+                            <p>Anos de Experiência</p>
+                        </div>
+                        <div class="stat-card" id="stat-card-clients">
+                            <h3 class="stat-number">1.5k+</h3>
+                            <p>Clientes Satisfeitos</p>
+                        </div>
+                        <div class="stat-card" id="stat-card-projects">
+                            <h3 class="stat-number">3k+</h3>
+                            <p>Equipamentos Instalados</p>
+                        </div>
+                        <div class="stat-card" id="stat-card-support">
+                            <h3 class="stat-number">24h</h3>
+                            <p>Suporte de Emergência</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="about-section section-padding">
+        <div class="container about-container">
+            <div class="about-image-container">
+                <div class="about-image-wrapper">
+                    <img src="images/about_technician.jpg" alt="Técnico da Tecnofrio Sul trabalhando" class="about-image" id="about-main-img">
+                    <div class="about-experience-badge">
+                        <span class="years">10</span>
+                        <span class="text">Anos de<br>Excelência</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-content">
+                <span class="section-subtitle">Quem Somos</span>
+                <h2 class="section-title">Especialistas em levar conforto para o seu dia a dia</h2>
+                <p>Fundada com o objetivo de oferecer soluções completas e eficientes em climatização, a <strong>Tecnofrio Sul</strong> destaca-se pela seriedade, compromisso e inovação tecnológica em seus serviços.</p>
+                <p>Atuamos no desenvolvimento de projetos residenciais, comerciais e corporativos, sempre buscando alinhar eficiência energética, bem-estar, silêncio e um design integrado ao seu ambiente.</p>
+                <div class="about-values">
+                    <div class="value-item">
+                        <span class="value-icon"><i class="fa-solid fa-bullseye"></i></span>
+                        <h4>Missão</h4>
+                        <p>Garantir o conforto térmico com sustentabilidade e excelência técnica.</p>
+                    </div>
+                    <div class="value-item">
+                        <span class="value-icon"><i class="fa-solid fa-eye"></i></span>
+                        <h4>Visão</h4>
+                        <p>Ser referência regional em soluções inteligentes e modernas de climatização.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Form Section -->
+    <section id="contato" class="contact-section section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Fale Conosco</span>
+                <h2 class="section-title">Solicite seu Orçamento Gratuito</h2>
+                <p class="section-description">Preencha o formulário abaixo ou fale diretamente conosco pelo WhatsApp. Respondemos rapidamente.</p>
+            </div>
+            
+            <div class="contact-wrapper">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h3>Informações de Contato</h3>
+                    <p class="contact-info-intro">Estamos prontos para atender você e planejar o sistema ideal para o seu ambiente.</p>
+                    
+                    <ul class="contact-info-list">
+                        <li>
+                            <span class="info-icon"><i class="fa-solid fa-phone"></i></span>
+                            <div>
+                                <h4>Telefone / WhatsApp</h4>
+                                <p><a href="https://wa.me/555399724949" target="_blank">(53) 9972-4949</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="info-icon"><i class="fa-solid fa-envelope"></i></span>
+                            <div>
+                                <h4>E-mail</h4>
+                                <p><a href="mailto:edilson@tecnofriosul.com">edilson@tecnofriosul.com</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="info-icon"><i class="fa-solid fa-location-dot"></i></span>
+                            <div>
+                                <h4>Área de Atendimento</h4>
+                                <p>Pelotas, Rio Grande e Região Sul - RS</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="info-icon"><i class="fa-solid fa-clock"></i></span>
+                            <div>
+                                <h4>Horário de Funcionamento</h4>
+                                <p>Segunda a Sexta: 08:00 às 18:00<br>Sábado: 08:00 às 12:00</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <form id="lead-form" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="form-name">Nome Completo</label>
+                                <input type="text" id="form-name" name="name" placeholder="Ex: João Silva" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-phone">Telefone / WhatsApp</label>
+                                <input type="tel" id="form-phone" name="phone" placeholder="Ex: (53) 9972-4949" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-email">E-mail</label>
+                            <input type="email" id="form-email" name="email" placeholder="Ex: joao@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-service">Serviço de Interesse</label>
+                            <select id="form-service" name="service" required>
+                                <option value="" disabled selected>Selecione o serviço corporativo</option>
+                                <option value="datacenters">Climatização de Data Center / CPD</option>
+                                <option value="higienizacao">Higienização Técnica & Comercial</option>
+                                <option value="pmoc">Contrato de PMOC (ANVISA)</option>
+                                <option value="projetos">Projetos e Instalações Centrais (VRF/Chiller)</option>
+                                <option value="manutencao">Manutenção Preventiva / Corretiva</option>
+                                <option value="outro">Outro assunto / Dúvida</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-message">Mensagem (Opcional)</label>
+                            <textarea id="form-message" name="message" rows="4" placeholder="Descreva brevemente o seu projeto ou necessidade..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">Enviar Solicitação</button>
+                        <div id="form-status-msg" class="form-status"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <img src="images/logo.png" alt="Tecnofrio Sul Logo" class="logo-img">
+                </a>
+                <p>Excelência e compromisso com o seu conforto térmico. Atendimento profissional residencial e comercial.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#diferenciais">Diferenciais</a></li>
+                    <li><a href="#sobre">Quem Somos</a></li>
+                </ul>
+            </div>
+            <div class="footer-services">
+                <h4>Serviços</h4>
+                <ul>
+                    <li><a href="#servicos">Instalação</a></li>
+                    <li><a href="#servicos">Manutenção</a></li>
+                    <li><a href="#servicos">Higienização</a></li>
+                    <li><a href="#servicos">PMOC / Empresas</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contato</h4>
+                <p><i class="fa-solid fa-phone"></i> (53) 9972-4949</p>
+                <p><i class="fa-solid fa-envelope"></i> edilson@tecnofriosul.com</p>
+                <p><i class="fa-solid fa-location-dot"></i> Rio Grande - RS</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container footer-bottom-content">
+                <p>&copy; 2026 Tecnofrio Sul. Todos os direitos reservados.</p>
+                <p>Desenvolvido com excelência.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/555399724949" target="_blank" class="whatsapp-float" id="whatsapp-float-btn" aria-label="Fale conosco no WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Fale Conosco</span>
+    </a>
+
+    <!-- Back to top button -->
+    <a href="#inicio" class="back-to-top" id="back-to-top-btn" aria-label="Voltar ao topo"><i class="fa-solid fa-arrow-up"></i></a>
+
+    <script src="script.js"></script>
+</body>
+</html>

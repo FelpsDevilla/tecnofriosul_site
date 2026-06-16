@@ -1,0 +1,14 @@
+{
+  "name": "tecnofriosul-site",
+  "version": "1.0.0",
+  "description": "Landing page estática para a empresa de climatização Tecnofrio Sul",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.2.0"
+  }
+}

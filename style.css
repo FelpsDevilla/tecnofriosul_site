@@ -746,6 +746,139 @@ img {
 }
 
 /* ==========================================================================
+   CLIENTS SECTION
+   ========================================================================== */
+.clients-section {
+    background-color: var(--bg-white);
+}
+
+.clients-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.city-card {
+    background-color: var(--bg-light);
+    padding: 30px;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid rgba(17, 11, 41, 0.04);
+    transition: var(--transition);
+}
+
+.city-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+    border-color: rgba(var(--primary-rgb), 0.15);
+}
+
+.city-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    border-bottom: 2px dashed rgba(79, 41, 152, 0.1);
+    padding-bottom: 12px;
+}
+
+.city-header i {
+    font-size: 1.3rem;
+    color: var(--primary);
+}
+
+.city-header h3 {
+    font-size: 1.15rem;
+    color: var(--secondary);
+}
+
+.client-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.client-list li {
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-main);
+}
+
+.client-list li i {
+    color: var(--primary);
+    font-size: 0.85rem;
+}
+
+/* Visual Gallery */
+.visual-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    border: 4px solid var(--bg-white);
+    aspect-ratio: 16/9;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 24px;
+    background: linear-gradient(to top, rgba(17, 11, 41, 0.9) 0%, rgba(17, 11, 41, 0.4) 70%, rgba(17, 11, 41, 0) 100%);
+    color: var(--bg-white);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    transform: translateY(10px);
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-item:hover .gallery-overlay {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.gallery-overlay h4 {
+    color: var(--bg-white);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.gallery-overlay p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .visual-gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ==========================================================================
    CONTACT SECTION (CONTATO E FORMULARIO)
    ========================================================================== */
 .contact-section {

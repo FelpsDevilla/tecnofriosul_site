@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const message = document.getElementById('form-message').value;
 
             // Construct email details
-            const recipient = 'edilson@tecnofriosul.com';
+            const recipient = 'edilson@tecnofriosul.com.br';
             const subject = `Solicitação de Orçamento - ${name}`;
             
             const body = `Olá Edilson,\n\n` +
@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
                          `- E-mail: ${email}\n` +
                          `- Serviço: ${serviceText}\n\n` +
                          `Mensagem adicional:\n${message || 'Sem mensagem adicional.'}\n\n` +
-                         `Vim através do site da Tecnofrio Sul.`;
+                         `Vim através do site da TECNOFRIO.`;
 
             // Create mailto url and redirect
             const mailtoUrl = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;

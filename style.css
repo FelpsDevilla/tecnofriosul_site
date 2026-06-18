@@ -505,12 +505,12 @@ img {
 }
 
 .badge-1 {
-    bottom: -20px;
+    bottom: -30px;
     left: -30px;
 }
 
 .badge-2 {
-    top: 30px;
+    top: 0px;
     right: -20px;
     animation-delay: 3s;
 }

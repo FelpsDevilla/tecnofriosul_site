@@ -160,6 +160,73 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ==========================================
+    // Portfolio Slider Carousel
+    // ==========================================
+    const portfolioSlides = document.querySelectorAll('.portfolio-slide');
+    const portfolioDots = document.querySelectorAll('.p-dot');
+    const portfolioPrevBtn = document.getElementById('portfolio-prev');
+    const portfolioNextBtn = document.getElementById('portfolio-next');
+    let currentPortfolioSlide = 0;
+    const portfolioInterval = 4000; // 4 seconds
+
+    const showPortfolioSlide = (index) => {
+        if (portfolioSlides.length === 0) return;
+        
+        portfolioSlides.forEach(slide => slide.classList.remove('active'));
+        portfolioDots.forEach(dot => dot.classList.remove('active'));
+        
+        portfolioSlides[index].classList.add('active');
+        if (portfolioDots[index]) {
+            portfolioDots[index].classList.add('active');
+        }
+        currentPortfolioSlide = index;
+    };
+
+    const nextPortfolioSlide = () => {
+        if (portfolioSlides.length === 0) return;
+        let next = (currentPortfolioSlide + 1) % portfolioSlides.length;
+        showPortfolioSlide(next);
+    };
+
+    const prevPortfolioSlide = () => {
+        if (portfolioSlides.length === 0) return;
+        let prev = (currentPortfolioSlide - 1 + portfolioSlides.length) % portfolioSlides.length;
+        showPortfolioSlide(prev);
+    };
+
+    if (portfolioSlides.length > 0) {
+        let portfolioTimer = setInterval(nextPortfolioSlide, portfolioInterval);
+
+        const resetPortfolioTimer = () => {
+            clearInterval(portfolioTimer);
+            portfolioTimer = setInterval(nextPortfolioSlide, portfolioInterval);
+        };
+
+        if (portfolioPrevBtn) {
+            portfolioPrevBtn.addEventListener('click', () => {
+                prevPortfolioSlide();
+                resetPortfolioTimer();
+            });
+        }
+
+        if (portfolioNextBtn) {
+            portfolioNextBtn.addEventListener('click', () => {
+                nextPortfolioSlide();
+                resetPortfolioTimer();
+            });
+        }
+
+        if (portfolioDots.length > 0) {
+            portfolioDots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    showPortfolioSlide(index);
+                    resetPortfolioTimer();
+                });
+            });
+        }
+    }
+
+    // ==========================================
     // 4. Smooth scroll for all anchor links
     // ==========================================
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {

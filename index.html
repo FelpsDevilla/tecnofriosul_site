@@ -28,6 +28,7 @@
                     <li><a href="#servicos" class="nav-link">Serviços</a></li>
                     <li><a href="#sobre" class="nav-link">Quem Somos</a></li>
                     <li><a href="#clientes" class="nav-link">Clientes</a></li>
+                    <li><a href="#portfolio" class="nav-link">Trabalho em Ação</a></li>
                     <li><a href="#contato" class="nav-link">Contato</a></li>
                 </ul>
             </nav>
@@ -202,7 +203,7 @@
         <div class="container about-container">
             <div class="about-image-container">
                 <div class="about-image-wrapper">
-                    <img src="/images/higenizacao/TecnicoLimpando.png" alt="Tecnico Limpando" class="about-image" id="about-main-img">
+                    <img src="images/higenizacao/TecnicoLimpando.png" alt="Tecnico Limpando" class="about-image" id="about-main-img">
                     <div class="about-experience-badge">
                         <span class="years">13</span>
                         <span class="text">Anos de<br>História</span>
@@ -300,101 +301,127 @@
                     </ul>
                 </div>
             </div>
-            
-            <!-- Showcase Portfolio Grid (All 11 Images in Action) -->
-            <div class="portfolio-header text-center" style="margin-top: 80px; margin-bottom: 40px;">
-                <h3 class="section-title" style="font-size: 2rem;">Nosso Trabalho em Ação</h3>
+        </div>
+    </section>
+
+    <!-- Portfolio Section (Trabalho em Ação) -->
+    <section id="portfolio" class="portfolio-section section-padding" style="background-color: var(--bg-white); border-top: 1px solid rgba(15, 23, 42, 0.05);">
+        <div class="container">
+            <div class="section-header text-center" style="margin-bottom: 40px;">
+                <span class="section-subtitle">Galeria</span>
+                <h2 class="section-title">Nosso Trabalho em Ação</h2>
                 <p class="section-description" style="max-width: 700px; margin: 0 auto;">Galeria de fotos reais de nossas instalações comerciais, sistemas de refrigeração industrial e higienização robótica de dutos.</p>
             </div>
 
-            <div class="portfolio-grid">
-                <!-- Image 1 -->
-                <div class="portfolio-item">
-                    <img src="images/refrigeracaoCormercial/SalaDeMaquinas.png" alt="Sala de Máquinas - Compressores">
-                    <div class="portfolio-overlay">
-                        <h4>Refrigeração Comercial</h4>
-                        <p>Racks de Compressores Industriais</p>
+            <div class="portfolio-carousel-wrapper">
+                <div class="portfolio-carousel">
+                    <!-- Slide 1 -->
+                    <div class="portfolio-slide active">
+                        <img src="images/refrigeracaoCormercial/SalaDeMaquinas.png" alt="Racks de Compressores Industriais">
+                        <div class="portfolio-caption">
+                            <h4>Refrigeração Comercial</h4>
+                            <p>Racks de Compressores Industriais</p>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="portfolio-slide">
+                        <img src="images/refrigeracaoCormercial/SalaDeMaquinas2.png" alt="Central de Frio Alimentar">
+                        <div class="portfolio-caption">
+                            <h4>Refrigeração Comercial</h4>
+                            <p>Central de Frio Alimentar</p>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="portfolio-slide">
+                        <img src="images/refrigeracaoCormercial/CameraFria.png" alt="Isolamento e Refrigeração de Alta Capacidade">
+                        <div class="portfolio-caption">
+                            <h4>Câmara Fria</h4>
+                            <p>Isolamento e Refrigeração de Alta Capacidade</p>
+                        </div>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="portfolio-slide">
+                        <img src="images/refrigeracaoCormercial/BalcaoDeLactiosDeSupermecado.png" alt="Montagem de Linha de Balcões Frios">
+                        <div class="portfolio-caption">
+                            <h4>Expositores de Laticínios</h4>
+                            <p>Montagem de Linha de Balcões Frios</p>
+                        </div>
+                    </div>
+                    <!-- Slide 5 -->
+                    <div class="portfolio-slide">
+                        <img src="images/refrigeracaoCormercial/balcaoDeCarnesDeSupermecado.png" alt="Instalação Comercial Completa">
+                        <div class="portfolio-caption">
+                            <h4>Expositores de Carnes</h4>
+                            <p>Instalação Comercial Completa</p>
+                        </div>
+                    </div>
+                    <!-- Slide 6 -->
+                    <div class="portfolio-slide">
+                        <img src="images/climatizacao/TecnicoNoAndaimeInstalandoArCondcionado.png" alt="Instalação com Andaimes e Segurança">
+                        <div class="portfolio-caption">
+                            <h4>Trabalho em Altura</h4>
+                            <p>Instalação com Andaimes e Segurança</p>
+                        </div>
+                    </div>
+                    <!-- Slide 7 -->
+                    <div class="portfolio-slide">
+                        <img src="images/climatizacao/ArCondicionadoEmbutidoNoTeto.png" alt="Climatização Comercial Embutida no Teto">
+                        <div class="portfolio-caption">
+                            <h4>Ar Cassete</h4>
+                            <p>Climatização Comercial Embutida no Teto</p>
+                        </div>
+                    </div>
+                    <!-- Slide 8 -->
+                    <div class="portfolio-slide">
+                        <img src="images/higenizacao/roboLimpeza.png" alt="Robô de Escovação e Sucção de Partículas">
+                        <div class="portfolio-caption">
+                            <h4>Limpeza de Dutos</h4>
+                            <p>Robô de Escovação e Sucção de Partículas</p>
+                        </div>
+                    </div>
+                    <!-- Slide 9 -->
+                    <div class="portfolio-slide">
+                        <img src="images/higenizacao/ArcCndicionadoComMantaAspiradora.png" alt="Limpeza Química com Bolsa Coletora de Resíduos">
+                        <div class="portfolio-caption">
+                            <h4>Higienização de Split</h4>
+                            <p>Limpeza Química com Bolsa Coletora de Resíduos</p>
+                        </div>
+                    </div>
+                    <!-- Slide 10 -->
+                    <div class="portfolio-slide">
+                        <img src="images/higenizacao/Dutos.png" alt="Inspeção e Manutenção de Dutos de Ar">
+                        <div class="portfolio-caption">
+                            <h4>Rede de Dutos</h4>
+                            <p>Inspeção e Manutenção de Dutos de Ar</p>
+                        </div>
+                    </div>
+                    <!-- Slide 11 -->
+                    <div class="portfolio-slide">
+                        <img src="images/higenizacao/TecnicoLimpando.png" alt="Aplicação de Bactericida em Evaporadora">
+                        <div class="portfolio-caption">
+                            <h4>Higienização Profunda</h4>
+                            <p>Aplicação de Bactericida em Evaporadora</p>
+                        </div>
                     </div>
                 </div>
-                <!-- Image 2 -->
-                <div class="portfolio-item">
-                    <img src="images/refrigeracaoCormercial/SalaDeMaquinas2.png" alt="Racks de Compressores Supermercado">
-                    <div class="portfolio-overlay">
-                        <h4>Refrigeração Comercial</h4>
-                        <p>Central de Frio Alimentar</p>
-                    </div>
-                </div>
-                <!-- Image 3 -->
-                <div class="portfolio-item">
-                    <img src="images/refrigeracaoCormercial/CameraFria.png" alt="Instalação de Câmara Fria">
-                    <div class="portfolio-overlay">
-                        <h4>Câmara Fria</h4>
-                        <p>Isolamento e Refrigeração de Alta Capacidade</p>
-                    </div>
-                </div>
-                <!-- Image 4 -->
-                <div class="portfolio-item">
-                    <img src="images/refrigeracaoCormercial/BalcaoDeLactiosDeSupermecado.png" alt="Expositores de Laticínios Supermercado">
-                    <div class="portfolio-overlay">
-                        <h4>Expositores de Laticínios</h4>
-                        <p>Montagem de Linha de Balcões Frios</p>
-                    </div>
-                </div>
-                <!-- Image 5 -->
-                <div class="portfolio-item">
-                    <img src="images/refrigeracaoCormercial/balcaoDeCarnesDeSupermecado.png" alt="Balcões de Carnes de Supermercado">
-                    <div class="portfolio-overlay">
-                        <h4>Expositores de Carnes</h4>
-                        <p>Instalação Comercial Completa</p>
-                    </div>
-                </div>
-                <!-- Image 6 -->
-                <div class="portfolio-item">
-                    <img src="images/climatizacao/TecnicoNoAndaimeInstalandoArCondcionado.png" alt="Técnico em Altura Instalação">
-                    <div class="portfolio-overlay">
-                        <h4>Trabalho em Altura</h4>
-                        <p>Instalação com Andaimes e Segurança</p>
-                    </div>
-                </div>
-                <!-- Image 7 -->
-                <div class="portfolio-item">
-                    <img src="images/climatizacao/ArCondicionadoEmbutidoNoTeto.png" alt="Ar Condicionado Cassete no Teto">
-                    <div class="portfolio-overlay">
-                        <h4>Ar Cassete</h4>
-                        <p>Climatização Comercial Embutida no Teto</p>
-                    </div>
-                </div>
-                <!-- Image 8 -->
-                <div class="portfolio-item">
-                    <img src="images/higenizacao/roboLimpeza.png" alt="Robô de Limpeza de Dutos">
-                    <div class="portfolio-overlay">
-                        <h4>Limpeza de Dutos</h4>
-                        <p>Robô de Escovação e Sucção de Partículas</p>
-                    </div>
-                </div>
-                <!-- Image 9 -->
-                <div class="portfolio-item">
-                    <img src="images/higenizacao/ArcCndicionadoComMantaAspiradora.png" alt="Limpeza de Split Manta Coletora">
-                    <div class="portfolio-overlay">
-                        <h4>Higienização de Split</h4>
-                        <p>Limpeza Química com Bolsa Coletora de Resíduos</p>
-                    </div>
-                </div>
-                <!-- Image 10 -->
-                <div class="portfolio-item">
-                    <img src="images/higenizacao/Dutos.png" alt="Estrutura de Dutos de Ventilação">
-                    <div class="portfolio-overlay">
-                        <h4>Rede de Dutos</h4>
-                        <p>Inspeção e Manutenção de Dutos de Ar</p>
-                    </div>
-                </div>
-                <!-- Image 11 -->
-                <div class="portfolio-item">
-                    <img src="images/higenizacao/TecnicoLimpando.png" alt="Técnico Higienizando Condicionador">
-                    <div class="portfolio-overlay">
-                        <h4>Higienização Profunda</h4>
-                        <p>Aplicação de Bactericida em Evaporadora</p>
-                    </div>
+                
+                <!-- Controls -->
+                <button class="carousel-btn prev-btn" id="portfolio-prev" aria-label="Anterior"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="carousel-btn next-btn" id="portfolio-next" aria-label="Próximo"><i class="fa-solid fa-chevron-right"></i></button>
+
+                <!-- Navigation indicators -->
+                <div class="portfolio-dots" id="portfolio-dots-container">
+                    <span class="p-dot active" data-index="0"></span>
+                    <span class="p-dot" data-index="1"></span>
+                    <span class="p-dot" data-index="2"></span>
+                    <span class="p-dot" data-index="3"></span>
+                    <span class="p-dot" data-index="4"></span>
+                    <span class="p-dot" data-index="5"></span>
+                    <span class="p-dot" data-index="6"></span>
+                    <span class="p-dot" data-index="7"></span>
+                    <span class="p-dot" data-index="8"></span>
+                    <span class="p-dot" data-index="9"></span>
+                    <span class="p-dot" data-index="10"></span>
                 </div>
             </div>
         </div>
@@ -543,6 +570,6 @@
     <!-- Back to top button -->
     <a href="#inicio" class="back-to-top" id="back-to-top-btn" aria-label="Voltar ao topo"><i class="fa-solid fa-arrow-up"></i></a>
 
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
 </body>
 </html>

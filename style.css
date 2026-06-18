@@ -388,7 +388,8 @@ img {
 
 .hero-image-wrapper {
     position: relative;
-    width: 700px;
+    width: 100%;
+    max-width: 700px;
 }
 
 .hero-slider {
@@ -1548,6 +1549,16 @@ img {
     
     .btn {
         width: 100%;
+    }
+    
+    .slide-caption {
+        white-space: normal;
+        width: 85%;
+        text-align: center;
+        border-radius: var(--radius-md);
+        font-size: 0.75rem;
+        bottom: 12px;
+        padding: 6px 12px;
     }
     
     .badge-1 {

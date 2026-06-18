@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const message = document.getElementById('form-message').value;
 
             // Construct email details
-            const recipient = 'edilson@tecnofriosul.com.br';
+            const recipient = 'edilson@tecnofriosul.com';
             const subject = `Solicitação de Orçamento - ${name}`;
             
             const body = `Olá Edilson,\n\n` +

@@ -126,6 +126,40 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ==========================================
+    // Hero Slider Carousel
+    // ==========================================
+    const slides = document.querySelectorAll('.hero-slide');
+    const dots = document.querySelectorAll('.dot');
+    let currentSlide = 0;
+    const slideInterval = 2500; // 4 seconds
+
+    const showSlide = (index) => {
+        slides.forEach(slide => slide.classList.remove('active'));
+        dots.forEach(dot => dot.classList.remove('active'));
+        
+        slides[index].classList.add('active');
+        dots[index].classList.add('active');
+        currentSlide = index;
+    };
+
+    const nextSlide = () => {
+        let next = (currentSlide + 1) % slides.length;
+        showSlide(next);
+    };
+
+    if (slides.length > 0 && dots.length > 0) {
+        let slideTimer = setInterval(nextSlide, slideInterval);
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                clearInterval(slideTimer);
+                showSlide(index);
+                slideTimer = setInterval(nextSlide, slideInterval);
+            });
+        });
+    }
+
+    // ==========================================
     // 4. Smooth scroll for all anchor links
     // ==========================================
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
